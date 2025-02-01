@@ -26,12 +26,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-
-    // Open HEIC files in a new tab for Vision Pro users
-    document.querySelectorAll('.openHeicLink').forEach(link => {
-        link.addEventListener('click', event => {
-            event.preventDefault(); // Prevent default link behavior
-            window.open(link.href, '_blank'); // Open HEIC file in a new tab
-        });
-    });
 });
