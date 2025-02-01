@@ -34,3 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+fullScreenTarget.addEventListener('click', event=> {
+    try {
+        fullScreenTarget.requestFullScreen();
+    } catch (error) {
+        console.log(error);
+    }
+});
